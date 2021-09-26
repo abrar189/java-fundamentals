@@ -11,16 +11,16 @@ public class Main {
 
 clock();    }
 
-    public static String pluralize(String string, int number){
+    public static String pluralize(String ele, int number){
 
         if(number <= 0){
-            return string+"s";
+            return ele+"s";
         }
         if(number == 1){
-            return  string;
+            return  ele;
         }
         if(number > 1){
-            return  string+"s";
+            return  ele+"s";
         }
         return "I own no animals";
 
@@ -29,25 +29,24 @@ clock();    }
     public static void flipNHeads(int n) {
 
         int HeadFlips = 0;
-        int flips = 0;
-        int headsCounter = 0;
+        int count = 0;
 
-        while(HeadFlips <=n) {
+        while(HeadFlips !=n) {
 
             double random = Math.random();
 
             if (random < .5) {
                 System.out.println("TAILS");
-                flips++;
+                HeadFlips = 0;
+                count++;
             }
             if (random >.5) {
                 System.out.println("HEADS");
                 HeadFlips++;
-                headsCounter++;
-                flips++;
+                count++;
             };
         }
-        System.out.println("It took " + flips + " flips to flip " + headsCounter + " heads in a row.");
+        System.out.println("It took " + count + " flips to flip " + n + " heads in a row.");
     }
 
 public static void clock() {
