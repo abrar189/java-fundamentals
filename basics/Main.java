@@ -51,17 +51,17 @@ clock();    }
     }
 
 public static void clock() {
-    int delay = 0;
+    int initial = 0;
     int interval = 1000;
     Timer timer = new Timer();
-    String pattern = "HH:mm:ss";
+    String time = "HH:mm:ss";
 
     TimerTask task = new TimerTask() {
         public void run() {
-            System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern(pattern)));
+            System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern(time)));
         }
     };
-    timer.scheduleAtFixedRate(task, delay, interval);
+    timer.scheduleAtFixedRate(task, initial, interval);
 }
 }
 
