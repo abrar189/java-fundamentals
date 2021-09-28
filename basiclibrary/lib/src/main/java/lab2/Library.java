@@ -4,17 +4,24 @@
 package lab2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Library {
 
-    public static void roll(int n) {
-        int[] rolls = new int[n];
-        ArrayList<Integer> number = new ArrayList<>();
-        for (int i = 0; i < rolls.length; i++) {
+    public static int[] roll(int n) {
+        int[] number = new int[n];
+        for (int i = 0; i < number.length; i++) {
             int random = (int) Math.ceil(Math.random() * 6);
-            number.add(random);
+            number[i]=random;
         }
-        System.out.println(number);
+        System.out.println(Arrays.toString(number) );
+        
+//        for (int i = 0; i < n; i++){
+//            System.out.print(number[i] + ", ");
+//        }
+//
+//        System.out.println("\n");
+        return number;
     }
 
     public static boolean containsDuplicates(int[] arr) {
@@ -30,7 +37,7 @@ public class Library {
 
     }
 
-    public static double Average(int[] array) {
+    public static double avgArray(int[] array) {
         double sum = 0;
         for (int value : array) {
             sum += value;
@@ -38,7 +45,7 @@ public class Library {
         return (sum / array.length);
     }
 
-    public static double arrayOfArrays(int [][] arr){
+    public static int[] arrayOfArrays(int [][] arr){
 
         double [] avarges =new double[arr.length];
         double Avg =0;
@@ -51,12 +58,14 @@ public class Library {
             avarges[i]=sum/arr[i].length;
         }
         Avg=avarges[0];
+        int lewestArryAvg=0;
         for (int i = 1; i < avarges.length; i++) {
             if (avarges[i] < Avg) {
                 Avg = avarges[i];
+                lewestArryAvg=i;
             }
         }
-        return Avg;
+        return arr[lewestArryAvg];
     }
     public boolean someLibraryMethod() {
         return true;

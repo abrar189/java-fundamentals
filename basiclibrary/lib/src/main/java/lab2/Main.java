@@ -1,5 +1,7 @@
 package lab2;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,11 +14,11 @@ public class Main {
                 {65, 56, 55, 52, 55, 62, 57},
         };
         Library lab2 = new Library();
-        lab2.roll(10);
+        lab2.roll(5);
         System.out.println(lab2.containsDuplicates(arr));
-        System.out.println (lab2.Average(arr));
+        System.out.println (lab2.avgArray(arr));
 
-        System.out.println(lab2.arrayOfArrays(arr2));
+        System.out.println(Arrays.toString(lab2.arrayOfArrays(arr2)));
 
     }
 
