@@ -15,7 +15,7 @@ public class Library {
             number[i]=random;
         }
         System.out.println(Arrays.toString(number) );
-        
+
 //        for (int i = 0; i < n; i++){
 //            System.out.print(number[i] + ", ");
 //        }
@@ -71,4 +71,5 @@ public class Library {
         return true;
 
     }
+
 }
