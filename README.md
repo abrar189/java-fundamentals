@@ -17,3 +17,10 @@ Task2 : Write a method called containsDuplicates that returns true or false depe
 Task3 :Write a method that accepts an array of integers and calculates and returns the average of all the values in the array.
 
 Task 4: Given an array of arrays calculate the average value for each array and return the array with the lowest average.
+
+## lab3: 
+Task1 : by using the October Seattle weather data write a method to Iterate through all of the data to find the min and max values. Use a HashSet of type Integer to keep track of all the unique temperatures seen
+
+Task 2 : Write a function called tally that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+Task 3 : Write a method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
