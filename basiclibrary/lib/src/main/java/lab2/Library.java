@@ -3,8 +3,7 @@
  */
 package lab2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class Library {
 
@@ -71,5 +70,46 @@ public class Library {
         return true;
 
     }
+    public static String analyzeWeathData(int[][] data) {
+        HashSet<Integer> Tempratuer = new HashSet<>();
+        for (int i = 0; i < data.length; i++) {
+            for (int temp : data[i]) {
+                Tempratuer.add(temp);
+            }
+        }
 
+        String minTemp = "Low Temperature " + Collections.min(Tempratuer);
+        String maxTemp = "\nHigh Temperature " + Collections.max(Tempratuer);
+        String neverSawTemp = "";
+        for (int i = Collections.min(Tempratuer); i < Collections.max(Tempratuer); i++) {
+            if (!Tempratuer.contains(i)) {
+                neverSawTemp += "\nNever saw temperature: " + i;
+
+            }
+        }
+        return minTemp + maxTemp + neverSawTemp;
+
+    }
+
+
+    public static String tally(List<String> votes) {
+        if (votes.isEmpty()) return "0";
+
+        HashSet<String> votedvalue = new HashSet<>();
+        votedvalue.addAll(votes);
+
+        int numVotes = 0;
+        String winner = null;
+
+        for (String value : votedvalue) {
+            int count = Collections.frequency(votes, value);
+            if (numVotes < count) {
+                numVotes = count;
+
+                winner = "\n"+ value + " received the most votes!";
+            }
+        }
+
+        return winner;
+    }
 }

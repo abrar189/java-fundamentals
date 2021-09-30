@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa5f6ad-f63b-4cbf-a076-f638fb27fa64" name="Changes" comment="">
+    <list default="true" id="e2018b8d-e96e-4a44-94f9-46ec64e64324" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/bin/main/lab2/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/bin/main/lab2/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/bin/main/lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/bin/main/lab2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/bin/test/lab2/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/bin/test/lab2/LibraryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,5 +61,16 @@
       <updated>1632662179249</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
