@@ -25,21 +25,21 @@ public class App {
 
     public static String ReadFiler(Path newpath) {
         String line = "";
-        String errorMSGs = "";
-        int lineNum=1;
+        String errormasseg = "";
+        int num=1;
 
             try (
                     BufferedReader bufferedReader = Files.newBufferedReader(newpath)
             ) {
                 while ((line = bufferedReader.readLine()) != null) {
                     if (!(line.isBlank() || line.endsWith("{") || line.endsWith("}") || line.contains("if") || line.contains("else") || line.endsWith(";")))
-                        errorMSGs += "Line " + lineNum + ": Missing semicolon.\n";
-                    lineNum++;
+                        errormasseg += "Line " + num + ": Missing semicolon.\n";
+                    num++;
                 }
             } catch (IOException ioException) {
                 System.out.println(ioException.getMessage());
             }
-            return errorMSGs;
+            return errormasseg;
     }
 
 
