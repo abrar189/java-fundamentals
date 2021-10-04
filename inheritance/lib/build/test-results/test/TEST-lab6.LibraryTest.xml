@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab6.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-03T19:55:38" hostname="LTUCSTUDENT-L08" time="0.028">
+  <properties/>
+  <testcase name="testRestaurant()" classname="lab6.LibraryTest" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
