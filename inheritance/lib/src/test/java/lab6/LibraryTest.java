@@ -32,4 +32,24 @@ class LibraryTest {
 
     }
 
+    @Test void testShop(){
+        Shop shop= new Shop("markt","nice market",2);
+
+
+
+        assertEquals("markt",shop.getName());
+        assertEquals("nice market",shop.getDesc());
+        assertEquals(2,shop.dollarSign());
+
+    }
+
+    @Test void testTheater(){
+        Theater theater=new Theater("amman");
+        assertEquals("amman",theater.getName());
+
+
+    }
+
+
+
 }

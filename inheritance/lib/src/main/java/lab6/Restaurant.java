@@ -2,14 +2,19 @@ package lab6;
 
 import java.util.*;
 
-public class Restaurant {
+public class Restaurant  implements UserReview {
+
+
+    public Restaurant(String name, int dollarSigns) {
+    }
+
     public static void main(String[] args) {
         System.out.println("hi");
     }
     private  String name;
     private  int stars;
     private  String priceCategory;
-    private Set<Review> reviewsArray;
+    public Set<Review> reviewsArray;
 
 
     public Restaurant(String name, String priceCategory) {
@@ -52,7 +57,7 @@ public class Restaurant {
 
     }
 
-private  String getReviews(){
+public String getReviews(){
     StringBuilder restaurantReviews = new StringBuilder();
     for (Review review : this.reviewsArray) {
         restaurantReviews.append(review.toString());
