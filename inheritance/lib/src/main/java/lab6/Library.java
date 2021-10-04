@@ -29,8 +29,16 @@ public class Library {
         restaurant.addReview(review6);
         System.out.println(restaurant);
 
+        Shop shop= new Shop("markt","nice market",2);
+        shop.addReview(review1);
+        shop.addReview(review2);
+        System.out.println(shop);
 
-
+        Theater theater=new Theater("jordan");
+        theater.addReview(review);
+        theater.addtheMovie("irbid");
+        theater.removedMovie("irbid");
+        System.out.println(theater);
 
     }
 }
